@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+
+<style>
+#start:target #tlacitko {
+    animation: tlacitko-keyframe 3s ease-in-out infinite normal forwards
+}
+
+@keyframes tlacitko-keyframe {
+    0% {
+        transform: translate(280px, 100px)
+    }
+
+    6.666667% {
+        transform: translate(280px, 120px)
+    }
+
+    13.333333% {
+        transform: translate(280px, 100px)
+    }
+
+    100% {
+        transform: translate(280px, 100px)
+    }
+}
+
+#start:target #ruka {
+    animation: ruka-keyframe 3s ease-in-out infinite normal forwards
+}
+
+@keyframes ruka-keyframe {
+    0% {
+        transform: translate(280px, 320px) rotate(0deg)
+    }
+
+    6.666667% {
+        transform: translate(280px, 320px) rotate(0deg)
+    }
+
+    100% {
+        transform: translate(280px, 320px) rotate(360deg)
+    }
+}
+</style>
+
+<g id="start" transform="translate(20 0)">
+    <ellipse rx="180" ry="180" transform="translate(280,320)" fill="none" stroke="#000" stroke-width="14"/>
+    <path d="M230,110h60" transform="matrix(.7 0.7-.7 0.7 340-85)" fill="#fff" stroke="#f44336" stroke-width="14" stroke-linecap="round"/>
+    <g id="tlacitko" transform="translate(280,100)">
+        <path d="M230,110h80" transform="translate(-270,-110)" fill="#fff" stroke="#f44336" stroke-width="14" stroke-linecap="round"/>
+    </g>
+    <g id="ruka" transform="translate(280,320) rotate(0)">
+        <path d="M265,230v-140" transform="translate(-265,-230)" fill="#fff" stroke="#f44336" stroke-width="14" stroke-linecap="round"/>
+    </g>
+</g>
+</svg>

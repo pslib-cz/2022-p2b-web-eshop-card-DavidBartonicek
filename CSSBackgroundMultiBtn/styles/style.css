@@ -1,0 +1,58 @@
+@layer reset, init, style, design;
+
+@import url(normalize.css) layer(reset);
+
+@layer reset {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+    :root {
+        --silver: #F2F2F2;
+        --gray: #D9D9D9;
+        --black: #000000;
+        --white: #FFFFFF;
+        --gr1: rgba(84,58,183,1);
+        --gr2: rgba(0,172,193,1);
+    }
+}
+
+@layer init {
+    html {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+    .main {
+        min-height: 100vh;
+        background-color: var(--gray);
+    }
+    .hidden {
+        font-size: 0;
+    }
+    a.btn {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+@layer design {
+    .main {
+
+    }
+    .btn {
+        display: inline-block;
+        font-size: 2em;
+        font-weight: 600;
+    }
+    
+    .btn--multi {
+
+    }
+
+    a.btn--multi:hover {
+       
+    }
+
+    a.btn:active { 
+        text-decoration: overline;
+    }
+}
+
